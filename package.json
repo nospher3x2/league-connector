@@ -1,0 +1,28 @@
+{
+  "name": "league-connector",
+  "version": "1.0.2",
+  "license": "MIT",
+  "description": "Advanced league client connector",
+  "main": "index.js",
+  "types": "types.d.ts",
+  "author": {
+    "name": "Ryan Ribeiro",
+    "url": "https://github.com/nosphery"
+  },
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "https": "^1.0.0",
+    "ws": "^7.4.6"
+  },
+  "homepage": "https://github.com/nosphery/league-connector",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nosphery/league-connector.git"
+  },
+  "keywords": [
+    "connector",
+    "league of legends",
+    "lol",
+    "lcu"
+  ]
+}
