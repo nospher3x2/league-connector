@@ -1,4 +1,4 @@
-declare interface ICredentials {
+declare interface IConnection {
     address: string,
     port: number,
     username: string,
@@ -9,11 +9,11 @@ declare interface ICredentials {
 
 declare class LeagueConnector {
 
-    credentials: ICredentials[]
+    connections: IConnection[]
     
     constructor();
 
-    static getLCUCredentialsFromProcess(): Promise<ICredentials | void>;
+    static getLCUConnectionsFromProcess(): Promise<IConnection | void>;
 
     start(): void;
 
@@ -21,9 +21,9 @@ declare class LeagueConnector {
     
     watchLeagueClient(): void;
 
-    on(event: 'connect', listener: (data: ICredentials) => void): this;
+    on(event: 'connect', listener: (data: IConnection) => void): this;
 
-    on(event: 'disconnect', listener: (data: ICredentials) => void): this;
+    on(event: 'disconnect', listener: (data: IConnection) => void): this;
 }
 
 export = LeagueConnector;
