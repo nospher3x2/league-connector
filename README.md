@@ -8,13 +8,13 @@
 $ npm install league-connector
 ```
 
-### Git
+### GIT
 
 ```git
 $ git clone https://github.com/nosphery/league-connector.git
 ```
 
-## Usage examples
+## Simple Example
 
 ```javascript
 const LeagueConnector = require('../lib');
