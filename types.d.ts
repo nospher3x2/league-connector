@@ -19,11 +19,12 @@ declare class LeagueConnector {
 
     stop(): void;
     
-    watchLeagueClient(): void;
-
     on(event: 'connect', listener: (data: IConnection) => void): this;
 
     on(event: 'disconnect', listener: (data: IConnection) => void): this;
 }
 
-export = LeagueConnector;
+export {
+    LeagueConnector,
+    IConnection
+};
