@@ -1,6 +1,6 @@
 {
   "name": "league-connector",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "license": "MIT",
   "description": "Advanced league client connector",
   "main": "index.js",
