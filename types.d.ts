@@ -1,4 +1,4 @@
-declare interface IConnection {
+export interface IConnection {
     address: string,
     port: number,
     username: string,
@@ -24,7 +24,4 @@ declare class LeagueConnector {
     on(event: 'disconnect', listener: (data: IConnection) => void): this;
 }
 
-export {
-    LeagueConnector,
-    IConnection
-};
+export default LeagueConnector;
