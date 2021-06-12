@@ -13,7 +13,7 @@ declare class LeagueConnector {
     
     constructor();
 
-    static getLCUConnectionsFromProcess(): Promise<IConnection | void>;
+    static getLCUConnectionsFromProcess(): Promise<IConnection[] | void>;
 
     start(): void;
 
